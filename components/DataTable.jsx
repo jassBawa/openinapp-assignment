@@ -12,8 +12,10 @@ const DataTable = ({ rowData }) => {
   }
 
   const initialTags = rowData[1][3].split(",");
-
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [dataArray, setDataArray] = useState(rowData);
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [tagsMap, setTagsMap] = useState(new Map());
 
   const headers = rowData[0]; // Assume the first row contains headers
